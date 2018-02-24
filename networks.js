@@ -6,48 +6,48 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('e5777746'),
-  addressVersion: 53,
-  privKeyVersion: 181,
-  P2SHVersion: 112,
+  magic: hex('7a05fa4ex'),
+  addressVersion: 78,
+  privKeyVersion: 128+78,
+  P2SHVersion: 85,
   hkeyPublicVersion: 0x0,
   hkeyPrivateVersion: 0x0,
   genesisBlock: {
-    hash: hex('00000da3701e9b6eb1afa31d97ce6fc2c09cb7e165271b2e900a4275df8dd5bb'),
-    merkle_root: hex('0a8875e41a01a01dd0f1c759d5da353ee92561c089d19ef939510d6eda44c096'),
+    hash: hex('00000c4aebb4eb5063c95985ebec40b550dc6efb43d5f77b445dcb04936caa79'),
+    merkle_root: hex('7021ac197432aff3f7e9f9a770f0fc16974a06ae3f1258804a58d7146e5c02fe'),
     height: 0,
-    nonce: 0,
+    nonce: 277106,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1511862256,
-    bits: 0x1e0fffff,
+    timestamp: 1507555516,
+    bits: 0x1f00ffff,
   },
   dnsSeeds: [
-    'dnsseed.neetcoin.jp'
+    'walletbuilders.com'
   ],
-  defaultClientPort: 21011
+  defaultClientPort: 24401
 };
 
 exports.mainnet = exports.livenet;
 
 exports.testnet = {
   name: 'testnet',
-  magic: hex('82547825'),
+  magic: hex('7dd8dc4d'),
   addressVersion: 111,
   privKeyVersion: '239',
   P2SHVersion: 196,
   hkeyPublicVersion: 0x0,
   hkeyPrivateVersion: 0x0,
   genesisBlock: {
-    hash: hex('0000299b82787bca0132dbe67f8360d335ca114991993f67f48bdb462512e452'),
-    merkle_root: hex('0a8875e41a01a01dd0f1c759d5da353ee92561c089d19ef939510d6eda44c096'),
+    hash: hex('0x00000c4aebb4eb5063c95985ebec40b550dc6efb43d5f77b445dcb04936caa79'),
+    merkle_root: hex('7021ac197432aff3f7e9f9a770f0fc16974a06ae3f1258804a58d7146e5c02fe'),
     height: 0,
-    nonce: 0,
+    nonce: 277106,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
     timestamp: 1511862256,
     bits: 0x1f00ffff,
   },
   dnsSeeds: [],
-  defaultClientPort: 21873
+  defaultClientPort: 34401
 };
