@@ -16,7 +16,7 @@
   "main": "bitcore.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MissMonacoin/monacore.git"
+    "url": "https://github.com/MissMonacoin/yajucore.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",

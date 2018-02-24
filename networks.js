@@ -20,7 +20,7 @@ exports.livenet = {
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
     timestamp: 1507555516,
-    bits: 0x1f00ffff,
+    bits: 0x1f00ffff
   },
   dnsSeeds: [
     'walletbuilders.com'
@@ -46,7 +46,7 @@ exports.testnet = {
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
     timestamp: 1511862256,
-    bits: 0x1f00ffff,
+    bits: 0x1f00ffff
   },
   dnsSeeds: [],
   defaultClientPort: 34401
