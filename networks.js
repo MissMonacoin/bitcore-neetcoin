@@ -7,6 +7,7 @@ var hex = function(hex) {
 exports.livenet = {
   name: 'livenet',
   magic: hex('7a05fa4e'),
+
   addressVersion: 78,
   privKeyVersion: 128+78,
   P2SHVersion: 85,
@@ -51,3 +52,4 @@ exports.testnet = {
   dnsSeeds: [],
   defaultClientPort: 34401
 };
+
